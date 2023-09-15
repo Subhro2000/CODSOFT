@@ -1,0 +1,36 @@
+Myself Subhro Ghosh.
+If you want to execute the program then download the JAR file and run it from cmd by giving the command "java -jar CBT_Project.jar", or ypu can directly run the class named "ATM_Interface.java". 
+
+In my ATM service user 1st have to give their Ac. no..
+If the ac no is new and not listed in our database then the user have to first register themselves by giving their name and setting the pin.
+Now once the user register their ac they can access their ac any time by givig their pin.
+If user gives a wrong pin then he have  chances to enter a correct pin. (After 3 unsuccessful attempts ATM will be closed).
+If user gives the correct pin then the menu will pop up, and it has 7 operation as follows.
+
+1) Deposit -> 			Here user have to enter the amt he want to deposit. If he enter 0 then he will come back to the menu.
+
+2) Withdraw -> 			Here user 1st have to enter the ammount, If he enter 0 then he will come back to the menu.
+	       			After that he has to enter the pin (For wrong pin he have 3 chances). If the pin is correct then three things can happen
+				  i)  Ac balance is 0 -> It will show "First deposit some money"
+				  ii) Ac balance < ammount -> It will show "Balance is insufficient"
+				  iii)Ac balance > ammount -> It will show "Withdraw successful".
+
+3) Balance Check -> 		It will show the current ac balance.
+
+4) Set Pin -> 			Here user 1st have to enter the old pin, If he enter 0 then he will come back to the menu.
+	      			(For wrong pin he have 3 chances). If the pin is correct then he has to give a new pin. If he enter 0 then he will come back to the menu.
+	      			If the new pin has less than 4 digit then he have 3 chance. 
+	      			If the new pin is same as old pin then he will come back to main menu.
+	      			Else he has to re-enter the new pin. If both the pin does not match then he will go back to 1st step i.e., enter the old pin.
+	      			If everything is okay then pin set successfully.
+
+5) Money Transfer -> 		Here user 1st have to enter the ac number of some exixting customer.
+		     		Then enter the ammount. And then enter pin.
+		     		If the pin is correct then money will be transfered to the benificiery account.
+		     		In between if the user enter 0 then he come back to main menu or if he enters the wrong pin then he has 3 chance to enter the correct pin.
+
+6) Transction History -> 	It will show all the previous transction. 
+			 	If the ac is new and no transction has been made then it will show "No Transction History"
+
+7) Exit -> 			Exit from the program.
+              
